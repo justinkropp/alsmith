@@ -57,19 +57,26 @@ h1, h2, h3, h4 {
   margin: 0;
   font-size: 1rem;
   font-family: 'UntitledSans-Light', sans-serif;
-  color: $black;
 }
 
 p {
   font-size: 1rem;
   font-family: 'UntitledSans-Regular', sans-serif;
-  color: $black;
 }
 
 blockquote {
   margin: 2em 0 0 0;
   padding: 0 4em 0 0;
   text-indent: -0.65em;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+  border-bottom: 2px solid rgba($black, 0.25);
+  &:hover {
+    border-bottom: 2px solid rgba($black, 0.95);
+  }
 }
 
 // Page Layout
@@ -101,10 +108,10 @@ section {
   p {
     font-size: 18px;
     line-height: 27px;
-    color: $black;
+    color: rgba($black, 0.60);
   }
   h2 {
-    font-size: 18px;
+    font-size: 15px;
     line-height: 36px;
     color: $black;
     &:after {
